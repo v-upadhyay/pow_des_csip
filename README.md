@@ -1,10 +1,10 @@
 # Fuel-Optimal Trajectory Generation for Powered Descent
 
-This repository contains a Julia-based implementation for solving the **fuel-optimal trajectory generation problem** in atmospheric powered descent. The approach employs **simulated annealing** for optimizing time samples and **nonlinear programming (NLP)** for solving the inner control optimization problem.
+This repository contains a Julia-based implementation for solving the **fuel-optimal and energy-optimal trajectory generation problem** in powered descent. The approach employs **convex semi-infinite program** to solve the optimal control problem (OCP) in a continuous-time (uncountably many constraints) while staying in the finitary optimization regime, using **simulated annealing** for optimizing time samples and **nonlinear programming (NLP)** for solving the inner convex optimization problem.
 
 ## Installation
 
-Ensure you have Julia installed along with the required dependencies:
+Ensure you have Julia (recommended version: 1.10.0) installed along with the required dependencies:
 
 ```julia
 using Pkg
