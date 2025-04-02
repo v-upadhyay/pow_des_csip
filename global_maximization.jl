@@ -55,11 +55,11 @@ control_norm = sqrt.(control_commands[1,:].^2 + control_commands[2,:].^2 + contr
 optimal_value = maximum(-objective_values)
 println("Optimal value: ", optimal_value)
 
-# # Plot the norm of control with increased plot size, axis label font sizes, grids, and curve thickness as a step plot
-# plot(control_norm, label=L"\|\mathbf{u^{\mathcal{D}}_{\beta}}(t)\|", xlabel="Time", ylabel="Magnitudes", legend=:bottomright, legendfontsize=12, size=(800, 600), xlabelfontsize=20, ylabelfontsize=20, grid=true, gridalpha=0.8, gridcolor=:indigo, gridlinewidth=0.5, linewidth=3, seriestype=:steppost)
+# Plot the norm of control with increased plot size, axis label font sizes, grids, and curve thickness as a step plot
+plot(control_norm, label=L"\|\mathbf{u^{\mathcal{D}}_{\beta}}(t)\|", xlabel="Time", ylabel="Magnitudes", legend=:bottomright, legendfontsize=12, size=(800, 600), xlabelfontsize=20, ylabelfontsize=20, grid=true, gridalpha=0.8, gridcolor=:indigo, gridlinewidth=0.5, linewidth=3, seriestype=:steppost)
 
-# # Add the slack control to the plot as a step plot
-# plot!(slack_commands, label=L"s^{\mathcal{D}}_{\alpha}(t)", legendfontsize=12, linewidth=3, linestyle=:dash, seriestype=:steppost)
+# Add the slack control to the plot as a step plot
+plot!(slack_commands, label=L"s^{\mathcal{D}}_{\alpha}(t)", legendfontsize=12, linewidth=3, linestyle=:dash, seriestype=:steppost)
 
-# # Add horizontal lines at y = 2 and y = 10
-# hline!([2, 10], label="Control bounds", legendfontsize=12, linewidth=3, linestyle=:dot)
+# Add horizontal lines at y = 2 and y = 10
+hline!([2, 10], label="Control bounds", legendfontsize=12, linewidth=3, linestyle=:dot)
