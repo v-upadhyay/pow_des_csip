@@ -25,7 +25,7 @@ julia global_maximization.jl
 - `internal_minimization.jl` – Defines the inner control optimization problem using NLP.
 - `objective_function.jl` – Implements the cost function to minimize fuel usage.
 - `constraints.jl` – Defines constraints on dynamics, control inputs, and terminal conditions.
-- `terminal_conditions.jl` – Enforces final state constraints.
+- `state_trajectory.jl` – Visual demonstration of state constraints ssatisfaction.
 
 ## References
 
