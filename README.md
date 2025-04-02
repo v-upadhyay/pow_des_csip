@@ -8,7 +8,7 @@ Ensure you have Julia installed along with the required dependencies:
 
 ```julia
 using Pkg
-Pkg.add(["JuMP", "Ipopt", "Plots", "LinearAlgebra", "StaticArrays", "Dates", "Serialization", "Optim", "Random", "LaTeXStrings"])
+Pkg.add(["JuMP", "Ipopt", "CairoMakie", "LinearAlgebra", "StaticArrays", "Dates", "Serialization", "Optim", "Random", "LaTeXStrings"])
 ```
 
 ## Usage
