@@ -1,4 +1,4 @@
-# Fuel-Optimal Trajectory Generation for Powered Descent
+# Optimal Trajectory Generation for 3-DoF Powered Descent
 
 This repository contains a Julia-based implementation for solving the **fuel-optimal and energy-optimal trajectory generation problem** in powered descent. The approach employs a **convex semi-infinite program** to solve the optimal control problem (OCP) in continuous time (uncountably many constraints) while staying in the finitary optimization regime, using **simulated annealing** for optimizing time samples and **nonlinear programming (NLP)** for solving the inner convex optimization problem.
 
