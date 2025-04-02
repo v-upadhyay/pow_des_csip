@@ -22,8 +22,8 @@ julia global_maximization.jl
 ## File Structure
 
 - `main.jl` – Entry point; sets up and runs the optimization pipeline.
-- `internal_minimization.jl` – Defines the inner control optimization problem using NLP.
-- `objective_function.jl` – Implements the cost function to minimize fuel usage.
+- `internal_minimization.jl` – Defines the inner convex optimization problem using NLP (IPOPT).
+- `objective_function.jl` – Implements the cost function to minimize fuel/ energy usage.
 - `constraints.jl` – Defines constraints on dynamics, control inputs, and terminal conditions.
 - `state_trajectory.jl` – Visual demonstration of state constraints ssatisfaction.
 
