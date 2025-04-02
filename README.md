@@ -24,7 +24,7 @@ Pkg.add(["JuMP", "Ipopt", "Plots", "LinearAlgebra", "StaticArrays", "Dates", "Se
 Run the main script:
 
 ```julia
-julia main.jl
+julia global_maximization.jl
 ```
 
 ## File Structure
