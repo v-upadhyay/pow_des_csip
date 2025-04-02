@@ -1,4 +1,4 @@
-# **Fuel-Optimal Trajectory Generation for Atmospheric Powered Descent**
+# **Fuel-Optimal Trajectory Generation for Powered Descent**
 
 This repository contains a Julia implementation for solving the **fuel-optimal trajectory generation problem** in atmospheric powered descent. The approach leverages **simulated annealing** to optimize the time-sampled trajectory while using **nonlinear programming (NLP)** to solve the inner control optimization problem.
 
