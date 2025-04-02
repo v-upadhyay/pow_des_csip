@@ -29,7 +29,7 @@ julia global_maximization.jl
 
 ## References
 
-This implementation is based on ideas from convex semi-infinite programming as discussed in:
+Implementation of the convex semi-infinite program is based on ideas from the following work:
 
 - **S. Das, A. Aravind, A. Cherukuri, and D. Chatterjee**, *Near-optimal solutions of convex semi-infinite programs via targeted sampling*, Annals of Operations Research, vol. 318, no. 1, pp. 129–146, 2022.
 
